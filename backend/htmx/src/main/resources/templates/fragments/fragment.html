@@ -6,6 +6,8 @@
 	<title>Htmx</title>
 </head>
 <body>
-	<span th:fragment="serverTimeFragment" th:text="#{welcome.message}" />
+	<span id="serverTimeFragment" th:fragment="serverTimeFragment">
+		<span th:text="#{welcome.message}" /> The server times is now: <span th:text="${serverTime}"></span>
+	</span>
 </body>
 </html>
