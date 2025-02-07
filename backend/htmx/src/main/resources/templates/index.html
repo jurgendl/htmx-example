@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Htmx</title>
+	<!-- https://cdnjs.com/libraries/htmx -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/htmx.min.js" integrity="sha512-2kIcAizYXhIn8TzUvqzEDZNuDZ+aW7yE/+f1HJHXFjQcGNfv1kqzJSTBRBSlOgp6B/KZsz1K0a3ZTqP9dnxioQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-	<span th:text="#{welcome.message}" />
+	<div th:insert="~{fragments/fragment :: serverTimeFragment}"></div>
 </body>
 </html>

@@ -11,7 +11,12 @@ import java.util.Date;
 public class HtmxApplicationController {
     @GetMapping(value = "/index")
     public String index(Model model) {
-        model.addAttribute("serverTime", new SimpleDateFormat().format(new Date()));
         return "index";
+    }
+
+    @GetMapping(value = "/serverTimeFragment")
+    public String serverTimeFragment(Model model) {
+        model.addAttribute("serverTime", new SimpleDateFormat().format(new Date()));
+        return "fragments/fragment.html :: #serverTimeFragment";
     }
 }
