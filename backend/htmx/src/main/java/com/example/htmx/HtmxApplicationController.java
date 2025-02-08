@@ -9,10 +9,11 @@ import java.util.Date;
 
 @Controller
 public class HtmxApplicationController {
-    @GetMapping(value = "/index")
+    @GetMapping(value = "/th-index")
     public String index(Model model) {
         System.out.println("HtmxApplicationController.index");
-        return "index";
+        serverTimeFragment(model);
+        return "th-index";
     }
 
     @GetMapping(value = "/serverTimeFragment")
