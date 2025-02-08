@@ -8,10 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title></title>
 	<link rel="stylesheet" href="./src/htmx-frontend.scss" />
+	<script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </head>
 
 <body>
-
+	<button hx-get="/serverTimeFragment" hx-swap="outerHTML">
+		Click Me
+	</button>
 
 	<script type="module" src="/src/htmx-frontend-index.ts"></script>
 </body>
