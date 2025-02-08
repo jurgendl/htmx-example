@@ -1,6 +1,6 @@
 import './htmx-frontend.scss'
-import { ViteSeedApp } from './components/htmx-frontend-app';
+import { HtmxApp } from './components/htmx-frontend-app';
 
-const app = new ViteSeedApp();
+const app = new HtmxApp();
 app.init();
 
