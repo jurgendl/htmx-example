@@ -1,3 +1,4 @@
 /bundle
 *.7z
 target
+/.idea
