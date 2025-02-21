@@ -33,4 +33,9 @@ public class HtmxApplicationController {
     public String furtherInfo() {
         return "furtherInfo";
     }
+
+    @GetMapping("/fail")
+    public String fail() {
+        throw new RuntimeException("Failed!");
+    }
 }

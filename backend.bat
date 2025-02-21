@@ -1,4 +1,4 @@
-start http://localhost:8080/
+start http://localhost:14825/
 cd backend
 cd htmx
 call gradle build
