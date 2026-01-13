@@ -1,6 +1,7 @@
 cd frontend
 cd htmx
-call npm.cmd build
+call npm install
+call npm build
 cd ..
 cd ..
 

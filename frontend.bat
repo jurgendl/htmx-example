@@ -1,7 +1,8 @@
 start http://localhost:5173/
 cd frontend
 cd htmx
-call npm.cmd run dev
+call npm install
+call npm run dev
 cd ..
 cd ..
 pause 
